@@ -43,7 +43,14 @@ class _TextFieldOverlayState extends State<TextFieldOverlay> {
                     FlutterOverlayWindow.closeOverlay();
                   },
                   child: const Text("Close Overlay"),
-                )
+                ),
+                const SizedBox(height: 50.0),
+                TextButton(
+                  onPressed: () {
+                    FlutterOverlayWindow.returnHomeScreen();
+                  },
+                  child: const Text("Return to HomeScreen"),
+                ),
               ],
             ),
           ),
